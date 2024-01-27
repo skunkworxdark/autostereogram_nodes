@@ -19,7 +19,7 @@ Simply delete the `autostereogram_nodes` folder or you can rename it by adding a
 ## Examples
 Basically, You take an image and create a depth map from it then feed it into the autostereogram node. 
 
-[autostereogram.json](workflows/autostereogram.json)
+Workflow example [autostereogram.json](workflows/autostereogram.json)
 ![Workflow](images/workflow.png)
 
 ![Alt text](images/spider.png)
