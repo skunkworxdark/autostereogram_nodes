@@ -14,3 +14,29 @@ Run a `git pull` from the `autostereogram_nodes` folder. Or run the `update.bat`
 
 <ins>Remove:</ins><BR>
 Simply delete the `autostereogram_nodes` folder or you can rename it by adding an underscore `_autostereogram_nodes` and Invoke will ignore it.
+
+
+## Examples
+Basically, You take an image and create a depth map from it then feed it into the autostereogram node. 
+
+[autostereogram.json](workflows/autostereogram.json)
+![Workflow](images/workflow.png)
+
+![Alt text](images/spider.png)
+![Alt text](images/spider-depth.png)
+![Alt text](images/spider-dots.png)
+![Alt text](images/spider-pattern.png) 
+
+![Alt text](images/judo.png)
+![Alt text](images/judo_depth.png)
+![Alt text](images/judo-pattern.png)
+
+![Alt text](images/pig.png)
+![Alt text](images/pig-depth.png)
+![Alt text](images/pig-pattern.png) 
+
+Example background pattern - these were generated in InvokeAI using the seamless tiling and the prompt "a random spiderweb pattern"
+
+![Alt text](images/50ec14e1-5a78-47fd-9936-2e9ac39cef75.png)
+![Alt text](images/2733c9ce-48f9-4319-93c6-8f095aa1d08f.png)
+![Alt text](images/c0ad3be3-8949-40f2-9920-1e8cc785cfa3.png)
