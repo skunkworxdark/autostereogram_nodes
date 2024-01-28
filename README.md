@@ -1,5 +1,5 @@
 # autostereogram-nodes
-InvokeAI nodes to generate autostereogram images from a depth map.  This is not a very useful node but more a nostalgic indulgence as I used to love these images as a kid. 
+InvokeAI nodes to generate autostereogram images from a depth map.  This is not a very useful node but more a 90s nostalgic indulgence as I used to love these images as a kid. 
 
 ## Usage
 <ins>Install:</ins><BR>
@@ -15,9 +15,26 @@ Run a `git pull` from the `autostereogram_nodes` folder. Or run the `update.bat`
 <ins>Remove:</ins><BR>
 Simply delete the `autostereogram_nodes` folder or you can rename it by adding an underscore `_autostereogram_nodes` and Invoke will ignore it.
 
+## Nodes
+This pack consists of two nodes `Autosteteogram` and `Adv Autostereogram`.
+
+<ins>Common inputs</ins><BR>
+- Board: Board name to save images to.
+- Depth Map: The grayscale depth map to convert into.
+- Pattern: Optional image to use as the background pattern for the autostereogram. If no image is provided random dots will be used.
+- Invert Depth Map: Inverts the depth map. This has the impact of inverting the direction of the 3D effect. It is also the difference between crossing or uncrossing your eyes to view the image.
+- Grayscale: Convert the output to grayscale.
+
+<ins>Autostereogram</ins><BR>
+- Pattern Divisions: How many times the pattern repeats in output images 5-10 is in generally a good range. The lower the repeats the greater the depth effect but the harder it is to see.
+
+<ins>Adv Autostereogram</ins><BR>
+- Pattern Width: The width to rescale the pattern. As a guide 5-10 pattern repeats across the output image is a good start.
+- Depth Steps: The number of depth steps, 30-127 is a good range. A good starting point is to have the number of steps be around half of the pattern width.
+
 
 ## Examples
-Basically, You take an image and create a depth map from it then feed it into the autostereogram node. 
+Take an image and create a depth map from it then feed it into the autostereogram node along with an optional pattern image.
 
 Workflow example [autostereogram.json](workflows/autostereogram.json)
 ![Workflow](images/workflow.png)
@@ -35,7 +52,7 @@ Workflow example [autostereogram.json](workflows/autostereogram.json)
 ![Alt text](images/pig-depth.png)
 ![Alt text](images/pig-pattern.png) 
 
-Example background pattern - these were generated in InvokeAI using the seamless tiling and the prompt "a random spiderweb pattern"
+Example background patterns. These were generated in InvokeAI using the seamless tiling option and the prompt "a random spiderweb pattern". Good patterns will have quite a lot of small details across the x-axis of the image and will avoid large blocks of single color.<BR>
 
 ![Alt text](images/50ec14e1-5a78-47fd-9936-2e9ac39cef75.png)
 ![Alt text](images/2733c9ce-48f9-4319-93c6-8f095aa1d08f.png)
