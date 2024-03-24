@@ -1,19 +1,37 @@
-# autostereogram-nodes
+# `autostereogram-nodes` for InvokeAI
+Discord Link :- [autostereogram-nodes](https://discord.com/channels/1020123559063990373/1198696869178638506)
+
 InvokeAI nodes to generate autostereogram images from a depth map.  This is not a very useful node but more a 90s nostalgic indulgence as I used to love these images as a kid. 
 
 ## Usage
-<ins>Install:</ins><BR>
-There are two options for installing these nodes. (Option 1 is the recommended option) 
-1. Git clone the repo into the `invokeai/nodes` directory. (**Recommended** - as it allows updating via a git pull)
-    - open a command prompt/terminal in the invokeAI nodes directory ( or choose `8. Open the developer console` option from the invoke.bat then `cd nodes`)
-    - run `git clone https://github.com/skunkworxdark/autostereogram_nodes.git`
+
+### <ins>Install</ins><BR>
+There are two options to install the nodes:
+
+1. **Recommended**: Use Git to clone the repo into the `invokeai/nodes` directory. This allows updating via `git pull`.
+
+    - In the InvokeAI nodes folder, run:
+
+        For Latest Invoke (4.0+):
+        ```bash
+        git clone https://github.com/skunkworxdark/autostereogram_nodes.git
+        ```
+        For Invoke (3.5-3.7):
+        ```bash
+        git clone https://github.com/skunkworxdark/autostereogram_nodes/tree/invoke-3.7
+        ```
+
 2. Manually download and place [autostereogram.py](autostereogram.py) & [__init__.py](__init__.py) in a subfolder in the `invokeai/nodes` folder.
 
-<ins>Update:</ins><BR>
-Run a `git pull` from the `autostereogram_nodes` folder. Or run the `update.bat` or `update.sh` that is in the `invokeai/nodes/autostereogram_nodes` folder. If you installed it manually then the only option is to monitor the repo or discord channel and manually download and replace the file yourself.
+### <ins>Update</ins><BR>
+Run a `git pull` from the `autostereogram_nodes` folder.
 
-<ins>Remove:</ins><BR>
-Simply delete the `autostereogram_nodes` folder or you can rename it by adding an underscore `_autostereogram_nodes` and Invoke will ignore it.
+Or run the `update.bat` or `update.sh`.
+
+For manual installs, download and replace the files.
+
+### <ins>Remove</ins><BR>
+Delete the `autostereogram_nodes` folder. Or rename it to `_autostereogram_nodes` and Invoke will ignore it.
 
 ## Nodes
 This pack consists of two nodes `Autosteteogram` and `Adv Autostereogram`.
